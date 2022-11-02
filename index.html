@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="gui.js"></script>
+    <script defer src="login.js"></script>
+</head>
+<body>
+    <div id="sign-up-div">
+        <h1>Become a Member of Flashcard Quizing</h1>
+        <hr>
+        <h2>Fill in the form to become a member.</h2>
+
+        <p class="input-label">Username: </p>
+        <input id="username" type="text" />
+  
+        <p class="input-label">Password: </p>
+        <input id="password" type="password" />
+  
+        <p class="input-label">Confirm Password: </p>
+        <input id="conf-password" type="password" />
+  
+        <p>
+          <button id="sign-up-btn">Sign Up</button>
+        </p>
+
+        <p>Already a Member?
+            <span id="sign-in-link" class="link">Sign In Here.</span>
+        </p>
+    </div>
+
+    <div id="login-div">
+        <h1>Hello.</h1>
+        <hr>
+        <h2>Fill out form to sign in to your account.</h2>
+
+        <p class="input-label">Username: </p>
+        <input id="userIn" type="text" />
+  
+        <p class="input-label">Password: </p>
+        <input id="passIn" type="password" />
+  
+        <p>
+          <button id="sign-in-btn">Sign In</button>
+        </p>
+
+        <p>Not a Member?
+            <span id="sign-up-link" class="link">Sign up Here.</span>
+        </p>
+
+    </div>
+</body>
+</html>

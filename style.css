@@ -1,0 +1,22 @@
+
+/* LOGIN AND SIGNIN */
+
+#login-div {
+    display: none;
+}
+
+.link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* MAIN INTERFACE */
+
+/* HOMEPAGE */
+#home-div {
+    display: none;
+}
+
+/* QUIZING */
