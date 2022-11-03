@@ -20,3 +20,17 @@ function displaySignIn() {
     signUpDiv.style.display = "none";
     signInDiv.style.display = "block";
 }
+
+// Home
+let homeDiv = document.getElementById("home-div");
+let login = false;
+
+function checkHomeDisplay() {
+    if (login === false) {
+        homeDiv.style.display = "none";
+    } else if (login === true) {
+        homeDiv.style.display = "block";
+        signUpDiv.style.display = "none";
+        signInDiv.style.display = "none";
+    }
+}

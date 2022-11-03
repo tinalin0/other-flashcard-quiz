@@ -1,5 +1,7 @@
 // User Signup and Login
 
+login = false;
+
 // HTML VARIABLES
 let signInBtn = document.getElementById('sign-in-btn');
 let signUpBtn = document.getElementById('sign-up-btn');
@@ -21,7 +23,8 @@ function signUpHandler() {
     } else {
       users.push(newUser(userName, passWord));
       alert("Sign up completed");
-      displayMain(index);
+      login = true;
+      checkHomeDisplay();
     }
   }
   saveUsers();
@@ -39,7 +42,8 @@ function signInHandler() {
     let ans = checkPass(index, passIn);
     if (ans >= 0) {
       alert("Login Successful");
-      displayMain(index);
+      login = true;
+      checkHomeDisplay();
     } else {
       alert ("Login Unsuccesful");
     }
