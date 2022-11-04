@@ -33,6 +33,7 @@ login = false;
 function displayMainDivs(div) {
     if (login === false) {
         div.style.display = "none";
+        displaySignUp();
     } else if (login === true) {
         div.style.display = "block";
         signUpDiv.style.display = "none";

@@ -25,7 +25,7 @@ function signUpHandler() {
       users.push(newUser(userName, passWord));
       alert("Sign up completed");
       login = true;
-      checkHomeDisplay();
+      displayMainDivs(homeDiv);
     }
   }
   saveUsers();
@@ -44,7 +44,7 @@ function signInHandler() {
     if (ans >= 0) {
       alert("Login Successful");
       login = true;
-      checkHomeDisplay();
+      displayMainDivs(homeDiv);
     } else {
       alert ("Login Unsuccesful");
     }
