@@ -20,3 +20,6 @@
 }
 
 /* QUIZING */
+#flashcards-div {
+    display: none;
+}

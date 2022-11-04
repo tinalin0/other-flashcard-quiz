@@ -1,6 +1,7 @@
 // User Signup and Login
-
-login = false;
+let login = false;
+document.addEventListener("load", displayMainDivs(homeDiv));
+document.addEventListener("load", displayMainDivs(flashcardsDiv));
 
 // HTML VARIABLES
 let signInBtn = document.getElementById('sign-in-btn');

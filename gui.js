@@ -23,14 +23,28 @@ function displaySignIn() {
 
 // Home
 let homeDiv = document.getElementById("home-div");
-let login = false;
 
-function checkHomeDisplay() {
+// Flashcards
+let flashcardsDiv = document.getElementById("flashcards-div");
+
+login = false;
+
+// Helper Function
+function displayMainDivs(div) {
     if (login === false) {
-        homeDiv.style.display = "none";
+        div.style.display = "none";
     } else if (login === true) {
-        homeDiv.style.display = "block";
+        div.style.display = "block";
         signUpDiv.style.display = "none";
         signInDiv.style.display = "none";
     }
 }
+
+// Switch between home and flashcards
+let homeLink = document.getElementById("home-link");
+let flashcardsLink = document.getElementById("flashcards-link");
+
+// Event Listeners
+homeLink.addEventListener("click", displayMainDivs(homeDiv));
+
+flashcardsLink.addEventListener("click", displayMainDivs(flashcardsDiv));
