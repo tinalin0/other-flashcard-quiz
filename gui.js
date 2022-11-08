@@ -1,4 +1,5 @@
 // Controls display of HTML
+let login = false;
 
 // HTML Variables
 let signInDiv = document.getElementById("login-div");
@@ -21,31 +22,31 @@ function displaySignIn() {
     signInDiv.style.display = "block";
 }
 
+// Switch between home and flashcards
+let homeLink = document.getElementById("home-link");
+let flashcardsLink = document.getElementById("flashcards-link");
+
 // Home
 let homeDiv = document.getElementById("home-div");
+// Event Listener
+homeLink.addEventListener("click", displayMainDivs(homeDiv));
 
 // Flashcards
 let flashcardsDiv = document.getElementById("flashcards-div");
+// Event Listener
+flashcardsLink.addEventListener("click", displayMainDivs(flashcardsDiv));
 
-login = false;
 
 // Helper Function
 function displayMainDivs(div) {
     if (login === false) {
         div.style.display = "none";
         displaySignUp();
-    } else if (login === true) {
+    } else {
+        homeDiv.style.display = "none";
+        flashcardsDiv.style.display = "none";
         div.style.display = "block";
         signUpDiv.style.display = "none";
         signInDiv.style.display = "none";
     }
 }
-
-// Switch between home and flashcards
-let homeLink = document.getElementById("home-link");
-let flashcardsLink = document.getElementById("flashcards-link");
-
-// Event Listeners
-homeLink.addEventListener("click", displayMainDivs(homeDiv));
-
-flashcardsLink.addEventListener("click", displayMainDivs(flashcardsDiv));

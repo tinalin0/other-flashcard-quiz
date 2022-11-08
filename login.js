@@ -1,5 +1,5 @@
 // User Signup and Login
-let login = false;
+login = false;
 document.addEventListener("load", displayMainDivs(homeDiv));
 document.addEventListener("load", displayMainDivs(flashcardsDiv));
 
