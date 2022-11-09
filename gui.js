@@ -43,8 +43,6 @@ function displayMainDivs(div) {
         div.style.display = "none";
         displaySignUp();
     } else {
-        homeDiv.style.display = "none";
-        flashcardsDiv.style.display = "none";
         div.style.display = "block";
         signUpDiv.style.display = "none";
         signInDiv.style.display = "none";
