@@ -1,18 +1,3 @@
-// User Signup and Login
-login = false;
-document.addEventListener("load", displayMainDivs(homeDiv));
-document.addEventListener("load", displayMainDivs(flashcardsDiv));
-
-// HTML VARIABLES
-let signInBtn = document.getElementById('sign-in-btn');
-let signUpBtn = document.getElementById('sign-up-btn');
-
-// SIGN UP BTN CLICKED
-signUpBtn.addEventListener('click', signUpHandler);
-
-// Array
-let users = loadUsers();
-
 function signUpHandler() {
   let userName = document.getElementById("username").value;
   let passWord = document.getElementById("password").value;
@@ -30,9 +15,6 @@ function signUpHandler() {
   }
   saveUsers();
 }
-
-// SIGN IN BTN CLICKED
-signInBtn.addEventListener('click', signInHandler);
 
 function signInHandler() {
   let userIn = document.getElementById("userIn").value;
