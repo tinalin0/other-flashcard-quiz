@@ -24,15 +24,15 @@ let signUpBtn = document.getElementById('sign-up-btn');
 let homeDiv = document.getElementById("home-div");
 
 // Link
-let homeLink = document.getElementById("home-link");
+let homeBtn = document.getElementById("home-btn");
 
 // Flashcard Variables
 
 // Div
 let flashcardsDiv = document.getElementById("flashcards-div");
 
-// Link
-let flashcardsLink = document.getElementById("flashcards-link");
+// btn
+let flashcardsBtn = document.getElementById("flashcards-btn");
 
 // Event Listeners
 
@@ -47,7 +47,7 @@ signUpLink.addEventListener("click", displaySignUp);
 
 signInLink.addEventListener("click", displaySignIn);
 
-// // Switch Flashcard and Home
-// homeLink.addEventListener("click", displayMainDivs(homeDiv));
+// Switch Flashcard and Home
+homeBtn.addEventListener("click", displayHomeDiv);
 
-// flashcardsLink.addEventListener("click", displayMainDivs(flashcardsDiv));
+flashcardsBtn.addEventListener("click", displayFlashDiv);

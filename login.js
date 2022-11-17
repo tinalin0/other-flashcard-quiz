@@ -10,7 +10,7 @@ function signUpHandler() {
       users.push(newUser(userName, passWord));
       alert("Sign up completed");
       login = true;
-      // displayMainDivs(homeDiv);
+      displayHomeDiv();
     }
   }
   saveUsers();
@@ -26,7 +26,7 @@ function signInHandler() {
     if (ans >= 0) {
       alert("Login Successful");
       login = true;
-      // displayMainDivs(homeDiv);
+      displayHomeDiv();
     } else {
       alert ("Login Unsuccesful");
     }

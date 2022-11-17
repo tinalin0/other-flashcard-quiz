@@ -8,14 +8,15 @@ function displaySignIn() {
     signInDiv.style.display = "block";
 }
 
-// // Helper Function
-// function displayMainDivs(div) {
-//     if (login === false) {
-//         div.style.display = "none";
-//         displaySignUp();
-//     } else {
-//         div.style.display = "block";
-//         signUpDiv.style.display = "none";
-//         signInDiv.style.display = "none";
-//     }
-// }
+function displayHomeDiv() {
+    signUpDiv.style.display = "none";
+    signInDiv.style.display = "none";
+    homeDiv.style.display = "block";
+    flashcardsDiv.style.display = "none";
+}
+
+function displayFlashDiv() {
+    signUpDiv.style.display = "none";
+    signInDiv.style.display = "none";    homeDiv.style.display = "none";
+    flashcardsDiv.style.display = "block";
+}
