@@ -37,15 +37,15 @@ let flashcardsLink = document.getElementById("flashcards-link");
 // Event Listeners
 
 // SIGN UP BTN CLICKED
-signUpBtn.addEventListener('click', signUpHandler());
+signUpBtn.addEventListener("click", signUpHandler);
 
 // SIGN IN BTN CLICKED
-signInBtn.addEventListener('click', signInHandler());
+signInBtn.addEventListener("click", signInHandler);
 
 // Switch Logins
-signUpLink.addEventListener("click", displaySignUp());
+signUpLink.addEventListener("click", displaySignUp);
 
-signInLink.addEventListener("click", displaySignIn());
+signInLink.addEventListener("click", displaySignIn);
 
 // // Switch Flashcard and Home
 // homeLink.addEventListener("click", displayMainDivs(homeDiv));
