@@ -1,5 +1,8 @@
 
 /* LOGIN AND SIGNIN */
+#sign-up-div {
+    display: block;
+}
 
 #login-div {
     display: none;
