@@ -23,16 +23,16 @@ let signUpBtn = document.getElementById('sign-up-btn');
 // Div
 let homeDiv = document.getElementById("home-div");
 
-// Link
-let homeBtn = document.getElementById("home-btn");
+// Btns = Array
+let homeBtn = document.getElementsByClassName("home-btn");
 
 // Flashcard Variables
 
 // Div
 let flashcardsDiv = document.getElementById("flashcards-div");
 
-// btn
-let flashcardsBtn = document.getElementById("flashcards-btn");
+// Btns - Array
+let flashcardsBtn = document.getElementsByClassName("flashcards-btn");
 
 // Event Listeners
 
@@ -48,6 +48,10 @@ signUpLink.addEventListener("click", displaySignUp);
 signInLink.addEventListener("click", displaySignIn);
 
 // Switch Flashcard and Home
-homeBtn.addEventListener("click", displayHomeDiv);
+for (let i = 0; i < homeBtn.length; i++) {
+    homeBtn[i].addEventListener("click", displayHomeDiv);
+}
 
-flashcardsBtn.addEventListener("click", displayFlashDiv);
+for (let i = 0; i < flashcardsBtn.length; i++) {
+    flashcardsBtn[i].addEventListener("click", displayFlashDiv);
+}
