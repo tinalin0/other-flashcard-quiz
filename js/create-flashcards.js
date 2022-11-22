@@ -1,8 +1,9 @@
 let cardDiv = document.getElementById("new-cards");
+let divArray = [];
 
 function addNewCard() {
-    let divArray = [];
     createNewDiv(divArray.length);
+    cardDiv.innerHTML = divArray;
 }
 
 // Helper Functions for Adding Cards
@@ -18,10 +19,13 @@ function createNewDiv(i) {
     let defInput = document.createElement("INPUT");
     defInput.id = "def" + i;
     defInput.setAttribute("type", "text");
+
+    divArray.push(newDiv);
 }
 
 function createDeck() {
 
+    cardDiv.innerHTML = "";
 }
 
 // Helper Functions for Creating New Decks
