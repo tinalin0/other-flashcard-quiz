@@ -7,3 +7,7 @@ let publicArray = [];
 // Private Sets of Flashcards
 let privateArray = [];
 // Account, Name - Terms and Definitions
+
+function displayAll() {
+    
+}
