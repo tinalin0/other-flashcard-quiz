@@ -3,7 +3,7 @@ let divArray = [];
 
 function addNewCard() {
     createNewDiv(divArray.length);
-    cardDiv.innerHTML = divArray;
+    cardDiv.innerHTML = JSON.parse(divArray);
 }
 
 // Helper Functions for Adding Cards
