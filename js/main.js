@@ -67,4 +67,3 @@ let createDeckBtn = document.getElementById("create-deck-btn");
 
 createDeckBtn.addEventListener("click", displayHomeDiv);
 createDeckBtn.addEventListener("click", createDeck);
-
