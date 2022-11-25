@@ -40,7 +40,9 @@ function updateDiv(i, term, def) {
 }
 
 function loopToLast() {
-    
+    for (let i = 0; i < divArray.length; i++) {
+        
+    }
 }
 
 // function createNewEl(i) {
