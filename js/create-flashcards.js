@@ -4,7 +4,7 @@ let divArray = [];
 function addNewCard() {
     // update divArray
     createNewEl(divArray.length);
-    divArray.push(updateDiv(divArray.length, elValue(divArray.length, "term"), elValue(divArray.length, "def")));
+    divArray.push(updateDiv(divArray.length, elValue(divArray.length-1, "term"), elValue(divArray.length-1, "def")));
 }
 
 // Helper Functions for Adding Cards
