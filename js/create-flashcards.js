@@ -4,21 +4,21 @@ let divArray = [];
 function addNewCard() {
     // update divArray
     createNewEl(divArray.length);
-    divArray.push(updateDiv(divArray.length, ));
+    divArray.push(updateDiv(divArray.length, elValue(divArray.length, "term"), elValue(divArray.length, "def")));
 }
 
 // Helper Functions for Adding Cards
 function createNewEl(i) {
     let newDiv = document.createElement("div");
-    newDiv.id = "card" + i;
+    newDiv.id = "card-" + i;
 
     let termInput = document.createElement("INPUT");
-    termInput.id = "term" + i;
+    termInput.id = "term-" + i;
     termInput.setAttribute("type", "text");
     termInput.setAttribute("placeholder", "Term " + i)
 
     let defInput = document.createElement("INPUT");
-    defInput.id = "def" + i;
+    defInput.id = "def-" + i;
     defInput.setAttribute("type", "text");
     defInput.setAttribute("placeholder", "Definition")
 
@@ -31,18 +31,17 @@ function createNewCard(div, term, def) {
     div.appendChild(def);
 }
 
+function elValue(i, element) {
+    let elValue = document.getElementById(`${element}-${i}`);
+    return elValue.value;
+}
+
 function updateDiv(i, term, def) {
     return {
         place: i,
         term: term,
         def: def,
     };
-}
-
-function loopToLast() {
-    for (let i = 0; i < divArray.length; i++) {
-        
-    }
 }
 
 // function createNewEl(i) {
